@@ -1,0 +1,26 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/ThirdParty/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 611f9763db2e42e5bf17884b4c26858c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Basys3Env1_behav xil_defaultlib.Basys3Env1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture a_counter of entity xil_defaultlib.Counter [\Counter(data_stream=15)\]
+Compiling architecture a_monopulsegenerator of entity xil_defaultlib.MonoPulseGenerator [monopulsegenerator_default]
+Compiling architecture a_instructionfetch of entity xil_defaultlib.InstructionFetch [instructionfetch_default]
+Compiling architecture a_controlunit of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture a_alucontrol of entity xil_defaultlib.ALUControl [alucontrol_default]
+Compiling architecture a_registerfile of entity xil_defaultlib.RegisterFile [\RegisterFile(adresslength=2)\]
+Compiling architecture a_instructiondecoder of entity xil_defaultlib.InstructionDecoder [instructiondecoder_default]
+Compiling architecture a_alu of entity xil_defaultlib.ALU [\ALU(datastream=15)\]
+Compiling architecture a_ram of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture a_sevensegmentdisplays of entity xil_defaultlib.SevenSegmentDisplays [sevensegmentdisplays_default]
+Compiling architecture a_basys3env1 of entity xil_defaultlib.basys3env1
+Built simulation snapshot Basys3Env1_behav

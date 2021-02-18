@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Thu Apr 30 19:03:50 2020
+# Process ID: 8616
+# Current directory: C:/Users/lexri/MIPS/MIPS.runs/synth_1
+# Command line: vivado.exe -log Basys3Env1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3Env1.tcl
+# Log file: C:/Users/lexri/MIPS/MIPS.runs/synth_1/Basys3Env1.vds
+# Journal file: C:/Users/lexri/MIPS/MIPS.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3Env1.tcl -notrace
+Command: synth_design -top Basys3Env1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12204 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 700.121 ; gain = 177.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3Env1' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:17]
+INFO: [Synth 8-3491] module 'MonoPulseGenerator' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/MonoPulseGenerator.vhd:6' bound to instance 'MonoPulseGenerator_C1' of component 'MonoPulseGenerator' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'MonoPulseGenerator' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/MonoPulseGenerator.vhd:13]
+	Parameter data_stream bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Counter.vhd:6' bound to instance 'Counter_C1' of component 'Counter' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/MonoPulseGenerator.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Counter.vhd:17]
+	Parameter data_stream bound to: 15 - type: integer 
+WARNING: [Synth 8-614] signal 'sd' is read in the process but is not in the sensitivity list [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (1#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Counter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MonoPulseGenerator' (2#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/MonoPulseGenerator.vhd:13]
+INFO: [Synth 8-3491] module 'MonoPulseGenerator' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/MonoPulseGenerator.vhd:6' bound to instance 'MonoPulseGenerator_C2' of component 'MonoPulseGenerator' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:151]
+INFO: [Synth 8-3491] module 'InstructionFetch' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:6' bound to instance 'InstructionFetch_C1' of component 'InstructionFetch' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetch' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetch' (3#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:19]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:4' bound to instance 'ControlUnit_C1' of component 'ControlUnit' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (4#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:19]
+	Parameter aluOpLength bound to: 2 - type: integer 
+	Parameter funcLength bound to: 2 - type: integer 
+	Parameter aluSelLength bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ALUControl' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:4' bound to instance 'ALUControl_C1' of component 'ALUControl' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:17]
+	Parameter aluOpLength bound to: 2 - type: integer 
+	Parameter funcLength bound to: 2 - type: integer 
+	Parameter aluSelLength bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:24]
+WARNING: [Synth 8-614] signal 'func' is read in the process but is not in the sensitivity list [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (5#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALUControl.vhd:17]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:4' bound to instance 'InstructionDecoder_C1' of component 'InstructionDecoder' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:19]
+	Parameter adressLength bound to: 2 - type: integer 
+	Parameter wordLength bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:6' bound to instance 'RegisterFile_C1' of component 'RegisterFile' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:19]
+	Parameter adressLength bound to: 2 - type: integer 
+	Parameter wordLength bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (7#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:19]
+	Parameter aluSelLength bound to: 2 - type: integer 
+	Parameter dataStream bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:6' bound to instance 'ALU_C1' of component 'ALU' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:21]
+	Parameter aluSelLength bound to: 2 - type: integer 
+	Parameter dataStream bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:27]
+WARNING: [Synth 8-3848] Net high in module/entity ALU does not have driver. [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:21]
+	Parameter adressLength bound to: 15 - type: integer 
+	Parameter wordLength bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:6' bound to instance 'RAM_C1' of component 'RAM' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:21]
+	Parameter adressLength bound to: 15 - type: integer 
+	Parameter wordLength bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (9#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/RAM.vhd:21]
+INFO: [Synth 8-3491] module 'SevenSegmentDisplays' declared at 'C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/SevenSegmentDisplays.vhd:6' bound to instance 'SevenSegmentDisplays_C1' of component 'SevenSegmentDisplays' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentDisplays' [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/SevenSegmentDisplays.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/SevenSegmentDisplays.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentDisplays' (10#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/SevenSegmentDisplays.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Basys3Env1' (11#1) [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Basys3Env1.vhd:17]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[15]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[14]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[13]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[12]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[11]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[10]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[9]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[8]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[7]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[6]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[5]
+WARNING: [Synth 8-3331] design RAM has unconnected port addr[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[31]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[30]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[29]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[28]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[27]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[26]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[25]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[24]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[23]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[22]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[21]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[20]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[19]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[18]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[17]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[16]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[12]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[11]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[9]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[3]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[2]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port high[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port en
+WARNING: [Synth 8-3331] design InstructionDecoder has unconnected port instr[15]
+WARNING: [Synth 8-3331] design InstructionDecoder has unconnected port instr[14]
+WARNING: [Synth 8-3331] design InstructionDecoder has unconnected port instr[13]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.098 ; gain = 240.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.098 ; gain = 240.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.098 ; gain = 240.125
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lexri/MIPS/MIPS.srcs/constrs_1/imports/Downloads/constraints.xdc]
+Finished Parsing XDC File [C:/Users/lexri/MIPS/MIPS.srcs/constrs_1/imports/Downloads/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lexri/MIPS/MIPS.srcs/constrs_1/imports/Downloads/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3Env1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3Env1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 880.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 880.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/Counter.vhd:27]
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lexri/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 14    
+	 257 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3Env1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module MonoPulseGenerator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module InstructionFetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	 257 Input     16 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 7     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module InstructionDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---RAMs : 
+	              256 Bit         RAMs := 1     
+Module SevenSegmentDisplays 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Basys3Env1 has port led[12] driven by constant 1
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port btn[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3Env1 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                          | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+|Basys3Env1  | RAM_C1/ram_reg                                      | Implied   | 16 x 16              | RAM16X1S x 16   | 
+|Basys3Env1  | InstructionDecoder_C1/RegisterFile_C1/registers_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 880.676 ; gain = 357.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                          | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+|Basys3Env1  | RAM_C1/ram_reg                                      | Implied   | 16 x 16              | RAM16X1S x 16   | 
+|Basys3Env1  | InstructionDecoder_C1/RegisterFile_C1/registers_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+-----------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 886.434 ; gain = 363.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    20|
+|3     |LUT1     |     4|
+|4     |LUT2     |    10|
+|5     |LUT3     |     5|
+|6     |LUT4     |    41|
+|7     |LUT5     |    18|
+|8     |LUT6     |    52|
+|9     |RAM16X1S |    16|
+|10    |RAM32M   |     6|
+|11    |FDCE     |    16|
+|12    |FDRE     |    54|
+|13    |IBUF     |     4|
+|14    |OBUF     |    21|
+|15    |OBUFT    |     6|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------+---------------------+------+
+|      |Instance                  |Module               |Cells |
++------+--------------------------+---------------------+------+
+|1     |top                       |                     |   274|
+|2     |  ALU_C1                  |ALU                  |     4|
+|3     |  InstructionDecoder_C1   |InstructionDecoder   |    17|
+|4     |    RegisterFile_C1       |RegisterFile         |    17|
+|5     |  InstructionFetch_C1     |InstructionFetch     |   123|
+|6     |  MonoPulseGenerator_C1   |MonoPulseGenerator   |    29|
+|7     |    Counter_C1            |Counter_1            |    24|
+|8     |  MonoPulseGenerator_C2   |MonoPulseGenerator_0 |    28|
+|9     |    Counter_C1            |Counter              |    24|
+|10    |  RAM_C1                  |RAM                  |    16|
+|11    |  SevenSegmentDisplays_C1 |SevenSegmentDisplays |    25|
++------+--------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 902.230 ; gain = 261.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 902.230 ; gain = 379.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 916.688 ; gain = 622.031
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.688 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lexri/MIPS/MIPS.runs/synth_1/Basys3Env1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3Env1_utilization_synth.rpt -pb Basys3Env1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 19:04:22 2020...
